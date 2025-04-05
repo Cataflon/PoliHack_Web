@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <div class="Title">
+   <title>Heal</title>
+ </div>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main-container">
+    <section class="hero-section">
+      <div class="animated-bg">
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        <div class="pulse"></div>
+        
+      </div>
+      
+      <div class="nav-container">
+        <div class="nav-content">
+          <div class="header-container">
+            <a href="index.html" class="logo-link">
+              <div class="logo">
+                <img class="logo-image" src="image-removebg-preview.png" alt="">
+              </div>
+            </a>
+            
+            <div class="search-container">
+              <form class="search-form">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" placeholder="search..." class="search-input">
+              </form>
+              
+              <div class="search-dropdown">
+                <div class="search-result">
+                  <div class="search-result-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="search-result-info">
+                    <div class="search-result-name">Dr. Popescu Ion</div>
+                    <div class="search-result-specialty">Dentist</div>
+                  </div>
+                </div>
+                <div class="search-result">
+                  <div class="search-result-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="search-result-info">
+                    <div class="search-result-name">Dr. Ionescu Maria</div>
+                    <div class="search-result-specialty">Medic de familie</div>
+                  </div>
+                </div>
+                <div class="search-result">
+                  <div class="search-result-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="search-result-info">
+                    <div class="search-result-name">Dr. Popa Alexandru</div>
+                    <div class="search-result-specialty">Psiholog</div>
+                  </div>
+                </div>
+                <div class="search-result">
+                  <div class="search-result-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                  </div>
+                  <div class="search-result-info">
+                    <div class="search-result-name">Dr. Georgescu Elena</div>
+                    <div class="search-result-specialty">Nutritionist</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="nav-links">
+              <a href="#faqs" class="nav-link">FAQs</a>
+              <a href="#harta" class="nav-link">Harta</a>
+              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#" class="user-icon-link" id="profileButton">
+                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div>
+          <div class="title-main">
+              <h1 class="hero-title">Heal.</h1>
+              <img class="logo-main-image" src="image-removebg-preview.png" alt="">
+          </div>
+
+          <div class="hero-text">
+            <p>Bine ai venit pe site-ul nostru!</p>
+          </div>
+
+          <div class="cta-container">
+            <button id="scrollButton" class="cta-button">Vezi mai multe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="bg-pattern"></div>
+      <div class="overlay"></div>
+
+      <div class="services-container">
+        <div class="services-grid">
+          <a href="doctor-list-medic.html" class="service-item-link">
+            <div class="service-item" data-color="#5dd0b8" data-category="medic">
+              <div class="service-wrapper">
+                <div class="service-icon" style="background-color: #5dd0b8;">
+                  <div class="icon-container">
+                    <svg class="briefcase-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <div class="plus-sign">+</div>
+                  </div>
+                </div>
+                
+                <div class="service-card" data-color="#5dd0b8">
+                  <h3 class="service-title">Medic</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="doctor-list-dentist.html" class="service-item-link">
+            <div class="service-item" data-color="#f0c53d" data-category="dentist">
+              <div class="service-wrapper">
+                <div class="service-icon" style="background-color: #f0c53d;">
+                  <div class="icon-container">
+                    <svg class="briefcase-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <div class="plus-sign">+</div>
+                  </div>
+                </div>
+                <div class="service-card" data-color="#f0c53d">
+                  <h3 class="service-title">Dentist</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="doctor-list-psiholog.html" class="service-item-link">
+            <div class="service-item" data-color="#ff3e8e" data-category="psiholog">
+              <div class="service-wrapper">
+                <div class="service-icon" style="background-color: #ff3e8e;">
+                  <div class="icon-container">
+                    <svg class="briefcase-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <div class="plus-sign">+</div>
+                  </div>
+                </div>
+                <div class="service-card" data-color="#ff3e8e">
+                  <h3 class="service-title">Psiholog</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="doctor-list-fitness.html" class="service-item-link">
+            <div class="service-item" data-color="#e67e22" data-category="fitness">
+              <div class="service-wrapper">
+                <div class="service-icon" style="background-color: #e67e22;">
+                  <div class="icon-container">
+                    <svg class="briefcase-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <div class="plus-sign">+</div>
+                  </div>
+                </div>
+                <div class="service-card" data-color="#e67e22">
+                  <h3 class="service-title">Fitness</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="doctor-list-nutritionist.html" class="service-item-link">
+            <div class="service-item" data-color="#1e40af" data-category="nutritionist">
+              <div class="service-wrapper">
+                <div class="service-icon" style="background-color: #1e40af;">
+                  <div class="icon-container">
+                    <svg class="briefcase-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <div class="plus-sign">+</div>
+                  </div>
+                </div>
+                <div class="service-card" data-color="#1e40af">
+                  <h3 class="service-title">Nutritionist</h3>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="doctor-help-container">
+          <button class="doctor-help-button">
+            Ce se intampla, doctore?
+            <span class="question-mark">?</span>
+            <span class="question-mark">?</span>
+            <span class="question-mark">?</span>
+          </button>
+        </div>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')">
+                
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1631815588090-d1bcbe9a8537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')">
+                
+            </div>
+            <div class="carousel-item" style="background-image: url('https://images.unsplash.com/photo-1666214280391-8b54a75def7d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80')">
+              
+            </div>
+        </div>
+        <div class="carousel-nav"></div>
+        <div class="carousel-prev">&#10094;</div>
+        <div class="carousel-next">&#10095;</div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const carouselSlide = document.querySelector('.carousel-slide');
+              const carouselItems = document.querySelectorAll('.carousel-item');
+              const prevBtn = document.querySelector('.carousel-prev');
+              const nextBtn = document.querySelector('.carousel-next');
+              const navContainer = document.querySelector('.carousel-nav');
+              
+              let currentIndex = 0;
+              const itemCount = carouselItems.length;
+              
+              // Create navigation dots
+              for (let i = 0; i < itemCount; i++) {
+                  const dot = document.createElement('div');
+                  dot.classList.add('carousel-nav-btn');
+                  if (i === 0) dot.classList.add('active');
+                  dot.addEventListener('click', () => {
+                      goToSlide(i);
+                  });
+                  navContainer.appendChild(dot);
+              }
+              
+              const navDots = document.querySelectorAll('.carousel-nav-btn');
+              
+              // Set up event listeners
+              prevBtn.addEventListener('click', prevSlide);
+              nextBtn.addEventListener('click', nextSlide);
+              
+              // Auto slide every 5 seconds
+              let slideInterval = setInterval(nextSlide, 5000);
+              
+              // Pause auto slide on hover
+              carouselSlide.addEventListener('mouseenter', () => {
+                  clearInterval(slideInterval);
+              });
+              
+              carouselSlide.addEventListener('mouseleave', () => {
+                  slideInterval = setInterval(nextSlide, 5000);
+              });
+              
+              function updateCarousel() {
+                  carouselSlide.style.transform = `translateX(-${currentIndex * 100}%)`;
+                  
+                  // Update active nav dot
+                  navDots.forEach((dot, index) => {
+                      dot.classList.toggle('active', index === currentIndex);
+                  });
+              }
+              function nextSlide() {
+            currentIndex = (currentIndex + 1) % itemCount;
+            updateCarousel();
+         }
+        
+         function prevSlide() {
+            currentIndex = (currentIndex - 1 + itemCount) % itemCount;
+            updateCarousel();
+         }
+        
+         function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+         }
+          });
+       </script>
+    </section>
+    
+
+
+
+    </main>
+   
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="footer-logo-container">
+            <div class="footer-logo">
+              <img class="logo-image" src="image-removebg-preview.png" alt="">
+            </div>
+            <h2 class="footer-title">Heal.</h2>
+          </div>
+
+          <div class="social-icons">
+            <a href="#" class="social-icon-link">
+              <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-link">
+              <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+                <path d="M349.33 69.33H162.67C108.39 69.33 69.33 108.39 69.33 162.67v186.66c0 54.28 39.06 93.34 93.34 93.34h186.66c54.28 0 93.34-39.06 93.34-93.34V162.67c0-54.28-39.06-93.34-93.34-93.34zM256 346.67c-50.03 0-90.67-40.64-90.67-90.67s40.64-90.67 90.67-90.67 90.67 40.64 90.67 90.67-40.64 90.67-90.67 90.67zm96-164a21.33 21.33 0 1 1 0-42.67 21.33 21.33 0 0 1 0 42.67zM256 192a64 64 0 1 0 0 128 64 64 0 0 0 0-128z"/>
+              </svg>
+              
+            </a>
+            <a href="#" class="social-icon-link">
+              <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 288" width="256" height="288">
+                <path fill="#000000" d="M170.67 0H128v182.4c0 17.7-14.4 32.11-32.11 32.11S63.78 200.1 63.78 182.4c0-17.7 14.4-32.1 32.11-32.1 2.95 0 5.81.41 8.52 1.17V116c-2.82-.37-5.7-.56-8.62-.56-36.79 0-66.67 29.88-66.67 66.67S59 248.78 95.78 248.78 162.45 218.9 162.45 182.11V94.25c12.4 9.23 27.71 14.72 44.22 14.72V65.07c-21.17 0-38.33-17.16-38.33-38.33V0h2.33z"/>
+              </svg>
+              
+              
+            </a>
+            <a href="#" class="social-icon-link">
+              <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-links">
+              <a href="#" class="footer-link">Contact</a>
+              <a href="#" class="footer-link">News</a>
+              <a href="#" class="footer-link">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-divider"></div>
+        
+        <div class="copyright">
+          ©2025 Heal. Co. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div id="registrationModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-left">
+        <div class="slideshow-container">
+          <div class="slideshow">
+            <div class="slide active">
+              <img src="https://images.unsplash.com/photo-1519923041107-e4dc8d9193da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="City View 1">
+              <div class="slide-content">
+                <h2 class="slide-title">Lorem Ipsum</h2>
+                <p class="slide-text">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1534274867514-d5b47ef89ed7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="City View 2">
+              <div class="slide-content">
+                <h2 class="slide-title">Health First</h2>
+                <p class="slide-text">Our mission is to provide the best healthcare services to our patients. We believe in putting your health first and ensuring you receive the care you deserve.</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="City View 3">
+              <div class="slide-content">
+                <h2 class="slide-title">Quality Care</h2>
+                <p class="slide-text">We are committed to providing the highest quality of care to all our patients. Our team of experienced professionals is dedicated to ensuring your health and well-being.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-right">
+        <div class="modal-header">
+          <h2 class="modal-title">Heal.</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        
+        <div class="toggle-container">
+          <div class="toggle-switch">
+            <div class="toggle-option active" data-role="user">Utilizator</div>
+            <div class="toggle-option" data-role="doctor">Doctor</div>
+            <div class="toggle-slider"></div>
+          </div>
+        </div>
+        
+        <h2 class="register-title">ÎNREGISTREAZĂ-TE!</h2>
+        
+        <form class="register-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nume">Nume</label>
+              <input type="text" id="nume" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="prenume">Prenume</label>
+              <input type="text" id="prenume" class="form-input" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="telefon">Număr de telefon</label>
+            <div class="phone-input-container">
+              <div class="country-code">
+                <span class="flag-icon">🇷🇴</span>
+                <span>+40</span>
+              </div>
+              <input type="tel" id="telefon" class="form-input phone-input" required>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="parola">Parolă</label>
+            <input type="password" id="parola" class="form-input" required>
+          </div>
+          
+          <button type="submit" class="create-account-btn">Creaza cont!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
