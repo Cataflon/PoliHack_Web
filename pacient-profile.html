@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pacient</title>
+    <link rel="stylesheet" href="styles_profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 5C16.2 5 5 16.2 5 30C5 43.8 16.2 55 30 55C43.8 55 55 43.8 55 30C55 16.2 43.8 5 30 5ZM42.5 32.5H32.5V42.5H27.5V32.5H17.5V27.5H27.5V17.5H32.5V27.5H42.5V32.5Z" fill="#2EDBBA"/>
+                </svg>
+            </div>
+            <h1>Profilul meu</h1>
+        </header>
+
+        <main>
+            <div class="profile-container">
+                <div class="profile-card">
+                    <div class="profile-left">
+                        <div class="profile-image-container">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-tuciGAP0YQrKAMNJ5baNzX2Ra7DMWe.png" alt="Profile Image" class="profile-image">
+                            <button class="edit-button">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.5 2.50001C18.8978 2.10219 19.4374 1.87869 20 1.87869C20.5626 1.87869 21.1022 2.10219 21.5 2.50001C21.8978 2.89784 22.1213 3.4374 22.1213 4.00001C22.1213 4.56262 21.8978 5.10219 21.5 5.50001L12 15L8 16L9 12L18.5 2.50001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="profile-right">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nume">Nume</label>
+                                <input type="text" id="nume" value="POPESCU" readonly>
+                            </div>
+                            <div class="form-group">
+                                <label for="prenume">Prenume</label>
+                                <input type="text" id="prenume" value="ION" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" value="popescuion@gmail.com" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefon">Număr de telefon</label>
+                            <div class="phone-input">
+                                <div class="country-code">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg" alt="Romania Flag" class="flag-icon">
+                                    <span>+40</span>
+                                </div>
+                                <input type="tel" id="telefon" value="770 770 770" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="medical-details-card">
+                    <h2>Detalii Medicale</h2>
+                    <div class="form-group">
+                        <label for="data-nasterii">Data nașterii</label>
+                        <input type="date" id="data-nasterii" value="1980-01-01">
+                    </div>
+                    <div class="form-group">
+                        <label for="cnp">CNP</label>
+                        <input type="text" id="cnp" value="1800101123456">
+                    </div>
+                    <div class="form-group">
+                        <label for="alergii">Alergii</label>
+                        <input type="text" id="alergii" value="Nu">
+                    </div>
+                    <div class="form-group">
+                        <label for="boli-cronice">Boli cronice</label>
+                        <input type="text" id="boli-cronice" value="Nu">
+                    </div>
+                </div>
+
+                <div class="appointments-history-card">
+                    <h2>Istoric programări</h2>
+                    <div class="appointment-history-list" id="appointment-history-list">
+                        <div class="appointment-history-item">
+                            <div class="doctor-info">
+                                <div class="doctor-avatar">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20" r="19.5" fill="white" stroke="#2EDBBA"/>
+                                        <path d="M20 20C23.3137 20 26 17.3137 26 14C26 10.6863 23.3137 8 20 8C16.6863 8 14 10.6863 14 14C14 17.3137 16.6863 20 20 20Z" fill="#E6E6E6"/>
+                                        <path d="M20 22C14.477 22 10 26.477 10 32H30C30 26.477 25.523 22 20 22Z" fill="#E6E6E6"/>
+                                    </svg>
+                                </div>
+                                <div class="doctor-details">
+                                    <h3>Nume Prenume</h3>
+                                    <p>Specializare</p>
+                                </div>
+                            </div>
+                            <div class="appointment-location">
+                                <p>ClinicaMed - Str. numeStrada Nr. Nr</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="add-button-container">
+            <button class="add-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <p>Adauga programare!</p>
+        </div>
+    </div>
+
+    <script src="patient-script.js"></script>
+</body>
+</html>
