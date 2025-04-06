@@ -93,7 +93,7 @@
             
             <div class="nav-links">
               <a href="#faqs" class="nav-link">FAQs</a>
-              <a href="#harta" class="nav-link">Harta</a>
+              <a href="harta..html" class="nav-link">Harta</a>
               <a href="#contact" class="nav-link">Contact</a>
               <a href="#" class="user-icon-link" id="profileButton">
                 <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -438,6 +438,45 @@
           
           <button type="submit" class="create-account-btn">Creaza cont!</button>
         </form>
+        <script>
+          document.querySelector('.register-form').addEventListener('submit', async function (e) {
+            e.preventDefault();
+          
+            // Get form values
+            const firstName = document.getElementById('prenume').value;
+            const lastName = document.getElementById('nume').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('telefon').value;
+            const password = document.getElementById('parola').value;
+          
+            // Detect role from toggle
+            const activeRole = document.querySelector('.toggle-option.active').dataset.role;
+          
+            // Create the user object
+            const newUser = {
+              firstName,
+              lastName,
+              email,
+              phone,
+              password,
+              role: activeRole  // "user" or "doctor"
+            };
+          
+            try {
+              // POST to mock backend (using json-server running on port 3001)
+              const res = await fetch(http://localhost:3001/${activeRole === 'doctor' ? 'doctors' : 'users'}, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(newUser)
+              });
+          
+             
+            } catch (err) {
+              console.error(err);
+              alert("Server indisponibil.");
+            }
+          });
+        </script>
       </div>
     </div>
   </div>

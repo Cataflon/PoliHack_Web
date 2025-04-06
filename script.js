@@ -309,10 +309,12 @@ document.addEventListener("DOMContentLoaded", () => {
     modalContainer.innerHTML = `
       <div class="doctor-help-modal-content">
         <div class="doctor-help-modal-header">
-          <div class="doctor-help-modal-icon">+</div>
+          <div class="doctor-help-modal-icon">
+          <img class="logo-image2" src="image-removebg-preview.png" alt="">
+          </div>
           <h2>Ce se întâmplă, doctore?</h2>
         </div>
-        <p class="doctor-help-modal-subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p class="doctor-help-modal-subtitle">Feedback-ul dumneavoasta este foarte important pentru noi</p>
         
         <div class="doctor-help-modal-form">
           <div class="form-group">

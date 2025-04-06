@@ -131,6 +131,13 @@ body {
   width: 3rem;
   height: 3rem;
 }
+.logo-image2{
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: rgb(75, 228, 200);
+  border-radius: 100%;
+
+}
 .search-container {
   position: relative;
   width: 100%;
